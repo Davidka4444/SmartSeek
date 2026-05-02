@@ -1,12 +1,15 @@
 // ==UserScript==
 // @name         SmartSeek
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  DeepSeek вновь умнее!
 // @author       Davidka4444 & DeepSeek
 // @match        https://chat.deepseek.com/*
 // @icon         https://deepseek.com/favicon.ico
 // @run-at       document-start
+// @supportURL   https://github.com/Davidka4444/SmartSeek/issues
+// @downloadURL  https://github.com/Davidka4444/SmartSeek/raw/refs/heads/main/main.user.js
+// @updateURL    https://github.com/Davidka4444/SmartSeek/raw/refs/heads/main/main.user.js
 // @grant        GM_getValue
 // ==/UserScript==
 
@@ -51,6 +54,7 @@
 
             Дата - `+now.toString()+`
 
+            SmartSeek на GitHub: https://github.com/davidka4444/SmartSeek
             © Project SmartSeek, 2026. Все права защищены.
             SmartSeek - DeepSeek вновь умнее
 
