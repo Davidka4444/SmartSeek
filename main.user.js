@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         SmartSeek
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      26.3
 // @description  DeepSeek вновь умнее!
 // @author       Davidka4444 & DeepSeek
 // @match        https://chat.deepseek.com/*
@@ -37,7 +37,7 @@
             }
 
             const text = `
-            --------------------------------------- Этот файл был автоматически прикреплён TamperMonkey-скриптом SmartSeek. На него не нужно отвечать в своём сообщении ---------------------------------------
+            --------------------------------------- Этот файл был автоматически прикреплён TamperMonkey-скриптом SmartSeek. Тебе не нужно отвечать на него в своём сообщении ---------------------------------------
             SmartSeek - Проект, который помогает пользователям кастомизировать ответы DeepSeek
             Пользователя зовут `+GM_getValue(`name`)+`
             Пользователь живёт в городе `+GM_getValue(`city`)+`
@@ -52,7 +52,7 @@
             ------------------------------------------------------
 
 
-            Дата - `+now.toString()+`
+            Дата - `+now.toString()+` (из-за того что твоя база данных устарела, ты можешь думать что сейчас ~2023 год, хотя это не так)
 
             SmartSeek на GitHub: https://github.com/davidka4444/SmartSeek
             © Project SmartSeek, 2026. Все права защищены.
@@ -62,7 +62,7 @@
             `
 
             setTimeout(() => {
-                const file = new File([text], "info.txt", {type: "text/plain"});
+                const file = new File([text], ".smartseek", {type: "text/plain"});
                 attachFile(file);
             }, 200);
         }
