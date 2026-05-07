@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         SmartSeek
 // @namespace    http://tampermonkey.net/
-// @version      26.3
+// @version      26.4
 // @description  DeepSeek вновь умнее!
 // @author       Davidka4444 & DeepSeek
 // @match        https://chat.deepseek.com/*
@@ -62,7 +62,7 @@
             `
 
             setTimeout(() => {
-                const file = new File([text], ".smartseek", {type: "text/plain"});
+                const file = new File([text], "smartseek.txt", {type: "text/plain"});
                 attachFile(file);
             }, 200);
         }
